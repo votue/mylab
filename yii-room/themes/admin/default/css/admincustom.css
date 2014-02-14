@@ -1,0 +1,10 @@
+.public{
+        width: 16px;
+        height:16px;
+        background: url('../images/icons/tick_circle.png') no-repeat top left;
+}
+.nonePublic{
+        width: 16px;
+        height:16px;
+        background: url('../images/icons/cross_circle.png') no-repeat top left;
+}

@@ -1,0 +1,1 @@
+CREATE TABLE `post_like`( `id` BIGINT(11) UNSIGNED NOT NULL AUTO_INCREMENT, `post_id` BIGINT(11) NOT NULL, `user_id` BIGINT(11), PRIMARY KEY (`id`) );
