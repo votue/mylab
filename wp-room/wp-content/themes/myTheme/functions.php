@@ -18,8 +18,8 @@
  * For more information on hooks, actions, and filters, @link http://codex.wordpress.org/Plugin_API
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Simple_Code_Blog
+ * @since Simple_Code_Blog 1.0
  */
 
 // Set up the content width value based on the theme's design and stylesheet.
