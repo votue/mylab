@@ -7,7 +7,6 @@ class SiteBaseController extends BaseController {
     public $jsUrl = '';
     public $baseUrl = '';
     public $layout= 'main';
-    public $hasWall = true;
     /**
      * Class constructor
      *
@@ -16,7 +15,6 @@ class SiteBaseController extends BaseController {
 
         // Add Js
         $this->jsUrl = Yii::app()->theme->baseUrl . '/js';
-        $hasWall = true;
         $this->baseUrl = Yii::app()->themeManager->baseUrl;
         // Add default page title which is the application name
         $this->pageTitle = Yii::app()->name;

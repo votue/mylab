@@ -6,7 +6,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" />
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
-    <link rel="shortcut icon" href="<?php echo $this->baseUrl.'/favicon.png'?>" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 
     
     <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
@@ -22,8 +22,9 @@
             $this->baseUrl.'/css/bootstrap.css',
             $this->baseUrl.'/css/bootstrap-responsive.css',
             $this->baseUrl.'/css/bootstrap-tagsinput.css',
-            //$this->baseUrl.'/css/jquery.bxslider.css',            
-            $this->baseUrl.'/css/styles.css',
+            //$this->baseUrl.'/css/jquery.bxslider.css',  
+            $this->baseUrl.'/css/darkstrap.css',          
+            $this->baseUrl.'/css/styles.css',            
         );
         foreach($fileCss as $file){
             $cs->registerCssFile($file); 

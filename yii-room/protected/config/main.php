@@ -24,7 +24,7 @@ return array(
                 'generatorPaths'=>array(
                     'bootstrap.gii',
                 ),
-            ), */         
+            ), */
         ),
         'import' => array(
             'application.components.*',
@@ -33,7 +33,7 @@ return array(
             'ext.easyimage.EasyImage',
         ),
         'theme' => 'default',
-        'name' => 'Sictravel',
+        'name' => 'YiiLab',
         'defaultController' => 'site/index',
         'layout' => 'main',
         'charset'=>'UTF-8',
