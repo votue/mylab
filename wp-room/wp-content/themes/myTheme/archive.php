@@ -6,7 +6,7 @@
  * For example, puts together date-based pages if no date.php file exists.
  *
  * If you'd like to further customize these archive views, you may create a
- * new template file for each specific one. For example, Twenty Twelve already
+ * new template file for each specific one. For example, Simple Code already
  * has tag.php for Tag archives, category.php for Category archives, and
  * author.php for Author archives.
  *
@@ -26,13 +26,13 @@ get_header(); ?>
 			<header class="archive-header">
 				<h1 class="archive-title"><?php
 					if ( is_day() ) :
-						printf( __( 'Daily Archives: %s', 'twentytwelve' ), '<span>' . get_the_date() . '</span>' );
+						printf( __( 'Daily Archives: %s', 'simplecode' ), '<span>' . get_the_date() . '</span>' );
 					elseif ( is_month() ) :
-						printf( __( 'Monthly Archives: %s', 'twentytwelve' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'twentytwelve' ) ) . '</span>' );
+						printf( __( 'Monthly Archives: %s', 'simplecode' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'simplecode' ) ) . '</span>' );
 					elseif ( is_year() ) :
-						printf( __( 'Yearly Archives: %s', 'twentytwelve' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'twentytwelve' ) ) . '</span>' );
+						printf( __( 'Yearly Archives: %s', 'simplecode' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'simplecode' ) ) . '</span>' );
 					else :
-						_e( 'Archives', 'twentytwelve' );
+						_e( 'Archives', 'simplecode' );
 					endif;
 				?></h1>
 			</header><!-- .archive-header -->
@@ -49,7 +49,7 @@ get_header(); ?>
 
 			endwhile;
 
-			twentytwelve_content_nav( 'nav-below' );
+			simplecode_content_nav( 'nav-below' );
 			?>
 
 		<?php else : ?>

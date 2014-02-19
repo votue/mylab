@@ -23,7 +23,7 @@ get_header(); ?>
 						<footer class="entry-meta">
 							<?php
 								$metadata = wp_get_attachment_metadata();
-								printf( __( '<span class="meta-prep meta-prep-entry-date">Published </span> <span class="entry-date"><time class="entry-date" datetime="%1$s">%2$s</time></span> at <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a> in <a href="%6$s" title="Return to %7$s" rel="gallery">%8$s</a>.', 'twentytwelve' ),
+								printf( __( '<span class="meta-prep meta-prep-entry-date">Published </span> <span class="entry-date"><time class="entry-date" datetime="%1$s">%2$s</time></span> at <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a> in <a href="%6$s" title="Return to %7$s" rel="gallery">%8$s</a>.', 'simplecode' ),
 									esc_attr( get_the_date( 'c' ) ),
 									esc_html( get_the_date() ),
 									esc_url( wp_get_attachment_url() ),
@@ -34,12 +34,12 @@ get_header(); ?>
 									get_the_title( $post->post_parent )
 								);
 							?>
-							<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
+							<?php edit_post_link( __( 'Edit', 'simplecode' ), '<span class="edit-link">', '</span>' ); ?>
 						</footer><!-- .entry-meta -->
 
 						<nav id="image-navigation" class="navigation" role="navigation">
-							<span class="previous-image"><?php previous_image_link( false, __( '&larr; Previous', 'twentytwelve' ) ); ?></span>
-							<span class="next-image"><?php next_image_link( false, __( 'Next &rarr;', 'twentytwelve' ) ); ?></span>
+							<span class="previous-image"><?php previous_image_link( false, __( '&larr; Previous', 'simplecode' ) ); ?></span>
+							<span class="next-image"><?php next_image_link( false, __( 'Next &rarr;', 'simplecode' ) ); ?></span>
 						</nav><!-- #image-navigation -->
 					</header><!-- .entry-header -->
 
@@ -77,14 +77,14 @@ endif;
 								/**
  								 * Filter the image attachment size to use.
 								 *
-								 * @since Twenty Twelve 1.0
+								 * @since Simple Code 1.0
 								 *
 								 * @param array $size {
 								 *     @type int The attachment height in pixels.
 								 *     @type int The attachment width in pixels.
 								 * }
 								 */
-								$attachment_size = apply_filters( 'twentytwelve_attachment_size', array( 960, 960 ) );
+								$attachment_size = apply_filters( 'simplecode_attachment_size', array( 960, 960 ) );
 								echo wp_get_attachment_image( $post->ID, $attachment_size );
 								?></a>
 
@@ -99,7 +99,7 @@ endif;
 
 						<div class="entry-description">
 							<?php the_content(); ?>
-							<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
+							<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'simplecode' ), 'after' => '</div>' ) ); ?>
 						</div><!-- .entry-description -->
 
 					</div><!-- .entry-content -->

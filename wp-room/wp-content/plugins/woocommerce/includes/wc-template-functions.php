@@ -1243,7 +1243,6 @@ if ( ! function_exists( 'woocommerce_breadcrumb' ) ) {
 		) );
 
 		$args = wp_parse_args( $args, $defaults );
-
 		wc_get_template( 'global/breadcrumb.php', $args );
 	}
 }

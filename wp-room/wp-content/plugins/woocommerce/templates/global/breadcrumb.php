@@ -33,7 +33,7 @@ if ( ( ! is_home() && ! is_front_page() && ! ( is_post_type_archive() && get_opt
 
 		$cat_obj = $wp_query->get_queried_object();
 		$this_category = get_category( $cat_obj->term_id );
-
+		var_dump($this_category);exit;
 		if ( $this_category->parent != 0 ) {
 			$parent_category = get_category( $this_category->parent );
 			echo get_category_parents($parent_category, TRUE, $delimiter );

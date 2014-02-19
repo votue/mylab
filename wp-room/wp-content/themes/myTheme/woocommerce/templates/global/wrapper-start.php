@@ -15,7 +15,7 @@ switch( $template ) {
 	case 'twentyeleven' :
 		echo '<div id="primary"><div id="content" role="main">';
 		break;
-	case 'twentytwelve' :
+	case 'simplecode' :
 		echo '<div id="primary" class="site-content"><div id="content" role="main">';
 		break;
 	case 'twentythirteen' :
